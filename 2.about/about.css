@@ -1,0 +1,32 @@
+/* Styling the fonts*/
+/* Styling the page*/
+header {
+    background-image: url('about_IMGs/IMG_9728.jpeg');
+    background-position: 30% 60%;
+}
+#bio {
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    gap: 150px;
+}
+
+#statement dl {
+    position: relative;
+    margin:unset;
+    margin-top: 50px;
+}
+#statement dd {
+    margin: unset;
+}
+#statement p {
+    position: absolute;
+    width: 550px;
+}
+#history {
+    display: flex;
+    align-items: center;
+    
+}

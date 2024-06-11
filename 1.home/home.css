@@ -1,0 +1,35 @@
+/* Styling the fonts*/
+#caption {
+    font-size: 3.5em;
+    line-height: 1em;
+    text-transform: capitalize;
+}
+/* Styling the page*/
+html {
+    background-color: #fafafa;
+}
+header {
+    background-image: url('home_IMGs/IMG_9498.JPG');
+}
+.contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 30px 15px 30px;
+}
+.contents img {
+    border-radius: 1%;
+    margin-top: 15px;
+}
+#aesthetic {
+    grid-column: 1/3;
+    text-align: center;
+}
+#aesthetic img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+#caption ul {
+    text-align: center;
+}
+/*transition: transform 150ms cubic-bezier(1, 0.26, 0.43, 1.02);
