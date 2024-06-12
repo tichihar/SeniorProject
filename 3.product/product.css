@@ -3,18 +3,23 @@
 /* Styling the page*/
 header {
     background-image: url('product_IMGs/IMG_1641.JPG');
-    background-position-y: -60px;
+    background-position-y: 35%;
 }
-main {
-    width: 1300;
-}
-.lineup div{
+.contents > div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(0.625rem, -1.33rem + 9.77vw, 6rem);
+    align-items: center;
+}
+#one {
+    margin-bottom: clamp(0.625rem, -1.33rem + 9.77vw, 6rem);;
 }
 #one_table, #twelveA_table {
-    display: grid;
-    grid-template-columns: 1fr;
+    position: relative;
+}
+.title {
+    position: absolute;
+    top: -70%;
 }
 table {
     width: 100%;
@@ -53,4 +58,10 @@ table td {
     text-align: center;
     background-color: #eee;
     padding: 10px 0;
+}
+
+@media screen and (max-width: 575px){
+    .contents > div {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -15,12 +15,10 @@ header {
 
 img {
     border-radius: 50px;
-    width: 100%;
 }
 
 /*aesthetic*/
 #aesthetic img{
-    width: 100%;
     height: 500px;
     object-fit: cover;
 }

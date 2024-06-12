@@ -1,15 +1,15 @@
 /* Styling the fonts*/
+html {
+    font-family:'Saira', 'Sarabun', sans-serif;
+}
 .font-size-S {
     font-size: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);
-    font-family:'Saira', 'Sarabun', sans-serif;
 }
 .font-size-M {
     font-size: clamp(1rem, 0.855rem + 0.73vw, 1.4rem);
-    font-family:'Saira', 'Sarabun', sans-serif;
 }
 .font-size-L {
     font-size: clamp(2rem, 1.636rem + 1.82vw, 3rem);
-    font-family:'Saira', 'Sarabun', sans-serif;
 }
 .lable {
     font-size: clamp(2.5rem, 1.227rem + 6.36vw, 6rem);
@@ -79,6 +79,9 @@ main {
     margin: 0 auto;
     height: auto;
     max-width: 100%;
+}
+img {
+    width: 100%;
 }
 .contents {
     margin-top: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
