@@ -39,17 +39,17 @@ html {
 body {
     position: relative;
     margin: unset;
+    overflow-x: hidden;
     min-height: 100vh;
-    padding-bottom: 180px;
+    padding-bottom: 200px;
     box-sizing: border-box;
 }
 
 header {
-    height: 500px;
+    height: clamp(15.625rem, 8.795rem + 29.94vw, 31.25rem);
     width: 100%;
-    background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
     opacity: 80%;
 }
 h1 {
@@ -79,7 +79,6 @@ main {
     margin: 0 auto;
     height: auto;
     max-width: 100%;
-    overflow-y: hidden;
 }
 .contents {
     margin-top: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
@@ -89,7 +88,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #345634;
+    background-color: #4F5750;
     padding: 150px 0px 25px 0px;
     text-align: center;
 }
@@ -108,11 +107,14 @@ footer {
 
 @media screen and (min-width: 550px) and (max-width:750px) {
     main{
-        width: 500px;
+        width: 540px;
     }
 }
 
 @media screen and (max-width: 575px){
+    header {
+        background-attachment: unset;
+    }
     main{
         width: 365px;
     }

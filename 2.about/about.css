@@ -24,10 +24,10 @@ header {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     width: 100%;
-    gap: clamp(0.625rem, -1.33rem + 9.77vw, 6rem);
 }
 #bio img {
     width: "100%";
+    margin: 0 auto;
     height: clamp(16.563rem, 15.131rem + 7.16vw, 20.5rem);
 }
 /*statement*/
@@ -49,12 +49,17 @@ header {
     background: linear-gradient(transparent 60%, #16b5dd 60%);
 }
 
+@media screen and (min-width: 735px) and (max-width: 1050px) {
+    #bio {
+    gap: clamp(0.625rem, -1.33rem + 9.77vw, 6rem);
+    }
+}
+
 @media (min-width: 390px) and (max-width:759px) {
     #bio {
         grid-template-columns: repeat(1, 1fr);
     }
     #bio img {
-        text-align: center;
         margin: 0 auto;
     }
 }
