@@ -1,6 +1,21 @@
 /* Styling the fonts*/
+.font-size-S {
+    font-size: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);
+    font-family:'Saira', 'Sarabun', sans-serif;
+}
+.font-size-M {
+    font-size: clamp(1rem, 0.855rem + 0.73vw, 1.4rem);
+    font-family:'Saira', 'Sarabun', sans-serif;
+}
+.font-size-L {
+    font-size: clamp(2rem, 1.636rem + 1.82vw, 3rem);
+    font-family:'Saira', 'Sarabun';
+}
+.lable {
+    font-size: clamp(2.5rem, 1.227rem + 6.36vw, 6rem);
+}
 nav a{
-    font-size: 1.5em;
+    font-size: clamp(1rem, 0.682rem + 1.59vw, 1.875rem);
     color: #e0e0e0;
     text-align: center;
 }
@@ -12,13 +27,29 @@ a:hover {
     color: #ffffff;
     font-weight: bold;
 }
-/* Styling the page*/
-body {
-    margin: unset;
+footer {
+    color: #ffffff;
 }
+/* Styling the page*/
+html {
+    background-color: #FDFFFD;
+}
+
+body {
+    position: relative;
+    margin: unset;
+    overflow-x: hidden;
+    min-height: 100vh;
+    padding-bottom: 170px;
+    box-sizing: border-box;
+}
+
 header {
     height: 500px;
+    width: 100%;
+    background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     opacity: 80%;
 }
 h1 {
@@ -44,14 +75,41 @@ nav li:not(:last-child){
     border-right:2px solid #ddd;
     }
 main {
-    width: 1300px;
     margin: 0 auto;
 }
-#footerWrap {
-    width: 100%;
-    background-color: lightgrey;
+.contents {
+    margin-top: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
+    margin-bottom: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
 }
 footer {
-    padding: 45px 0px 15px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #345634;
+    padding: 150px 0px 25px 0px;
     text-align: center;
+}
+
+@media screen and (min-width: 1220px) {
+    main{
+        width: 1200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1219px){
+    main{
+        width: 850px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 893px){
+    main{
+        width: 720px;
+    }
+}
+
+@media (max-width: 767px){
+    main{
+        width: 500px;
+    }
 }

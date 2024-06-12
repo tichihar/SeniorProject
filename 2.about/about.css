@@ -1,32 +1,57 @@
 /* Styling the fonts*/
+/*statement*/
+dt {
+    font-size: 1.25em;
+}
+dd {
+    font-size: 3em;
+    font-weight: bold;
+}
+p{
+    font-size: 1em;
+}
+
 /* Styling the page*/
+/*header*/ 
 header {
     background-image: url('about_IMGs/IMG_9728.jpeg');
     background-position: 30% 60%;
 }
-#bio {
-    margin: 0 auto;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    gap: 150px;
-}
 
+/*bio*/
+#bio {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: clamp(0.625rem, -1.33rem + 9.77vw, 6rem);
+}
+#bio img {
+    width: "100%";
+    height: clamp(16.563rem, 15.131rem + 7.16vw, 20.5rem);
+}
+/*statement*/
 #statement dl {
     position: relative;
     margin:unset;
-    margin-top: 50px;
+    width: clamp(18.75rem, 13.068rem + 28.41vw, 34.375rem);
+    margin-top: 35px;
+
+}
+#statement dt{
+    position: absolute;
+    top: -15px;
 }
 #statement dd {
     margin: unset;
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+    background: linear-gradient(transparent 60%, #16b5dd 60%);
 }
-#statement p {
+
+footer {
     position: absolute;
-    width: 550px;
-}
-#history {
-    display: flex;
-    align-items: center;
-    
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
