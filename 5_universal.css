@@ -33,14 +33,14 @@ footer {
 /* Styling the page*/
 html {
     background-color: #FDFFFD;
+    overflow-x: hidden;
 }
 
 body {
     position: relative;
     margin: unset;
-    overflow-x: hidden;
     min-height: 100vh;
-    padding-bottom: 170px;
+    padding-bottom: 180px;
     box-sizing: border-box;
 }
 
@@ -75,7 +75,10 @@ nav li:not(:last-child){
     border-right:2px solid #ddd;
     }
 main {
+    width: 1200px;
     margin: 0 auto;
+    height: auto;
+    max-width: 100%;
 }
 .contents {
     margin-top: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
@@ -90,26 +93,26 @@ footer {
     text-align: center;
 }
 
-@media screen and (min-width: 1220px) {
-    main{
-        width: 1200px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1219px){
+@media (min-width: 900px) and (max-width: 1219px){
     main{
         width: 850px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 893px){
+@media (min-width: 760px) and (max-width: 899px){
     main{
         width: 720px;
     }
 }
 
-@media (max-width: 767px){
+@media (min-width: 390px) and (max-width:759px) {
     main{
         width: 500px;
+    }
+}
+
+@media (max-width: 389px){
+    main{
+        width: 370px;
     }
 }
