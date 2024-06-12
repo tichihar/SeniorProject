@@ -94,26 +94,26 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 900px) and (max-width: 1219px){
+@media screen and (min-width: 1035px) and (max-width: 1220px){
     main{
-        width: 850px;
+        width: 1000px;
     }
 }
 
-@media (min-width: 760px) and (max-width: 899px){
+@media screen and (min-width: 735px) and (max-width: 1050px){
     main{
-        width: 720px;
+        width: 700px;
     }
 }
 
-@media (min-width: 390px) and (max-width:759px) {
+@media screen and (min-width: 550px) and (max-width:750px) {
     main{
         width: 500px;
     }
 }
 
-@media (max-width: 389px){
+@media screen and (max-width: 575px){
     main{
-        width: 370px;
+        width: 365px;
     }
 }

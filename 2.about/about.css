@@ -20,8 +20,8 @@ header {
 
 /*bio*/
 #bio {
-    position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     width: 100%;
     gap: clamp(0.625rem, -1.33rem + 9.77vw, 6rem);
@@ -47,4 +47,14 @@ header {
     padding: 0.2rem;
     margin-bottom: 0.2rem;
     background: linear-gradient(transparent 60%, #16b5dd 60%);
+}
+
+@media (min-width: 390px) and (max-width:759px) {
+    #bio {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #bio img {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
