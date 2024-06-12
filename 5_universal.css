@@ -9,7 +9,7 @@
 }
 .font-size-L {
     font-size: clamp(2rem, 1.636rem + 1.82vw, 3rem);
-    font-family:'Saira', 'Sarabun';
+    font-family:'Saira', 'Sarabun', sans-serif;
 }
 .lable {
     font-size: clamp(2.5rem, 1.227rem + 6.36vw, 6rem);
@@ -17,6 +17,7 @@
 nav a{
     font-size: clamp(1rem, 0.682rem + 1.59vw, 1.875rem);
     color: #e0e0e0;
+    font-family:'Sarabun', 'Saira', sans-serif;
     text-align: center;
 }
 nav a.current {
@@ -33,7 +34,6 @@ footer {
 /* Styling the page*/
 html {
     background-color: #FDFFFD;
-    overflow-x: hidden;
 }
 
 body {
@@ -79,6 +79,7 @@ main {
     margin: 0 auto;
     height: auto;
     max-width: 100%;
+    overflow-y: hidden;
 }
 .contents {
     margin-top: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
