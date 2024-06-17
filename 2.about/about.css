@@ -26,9 +26,9 @@ header {
     width: 100%;
 }
 #bio img {
-    width: "100%";
+    width: clamp(16.563rem, 15.131rem + 7.16vw, 20.5rem);
+    height: auto;
     margin: 0 auto;
-    height: clamp(16.563rem, 15.131rem + 7.16vw, 20.5rem);
 }
 /*statement*/
 #statement dl {
@@ -53,13 +53,14 @@ header {
     #bio {
     gap: clamp(0.625rem, -1.33rem + 9.77vw, 6rem);
     }
+
+    #bio img {
+
+    }
 }
 
 @media (min-width: 390px) and (max-width:759px) {
     #bio {
         grid-template-columns: repeat(1, 1fr);
-    }
-    #bio img {
-        margin: 0 auto;
     }
 }
