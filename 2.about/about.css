@@ -14,22 +14,35 @@ p{
 /* Styling the page*/
 /*header*/ 
 header {
-    background-image: url('about_IMGs/IMG_9728.jpeg');
-    background-position: 30% 60%;
+    background-image: url('about_IMGs/about_header_img.jpg');
+    background-position-y: 175%;
 }
 
 /*bio*/
 #bio {
+    display: flex;
+    justify-items: center;
+    gap: clamp(0.625rem, -1.33rem + 9.77vw, 6rem);
+}
+
+/* #bio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     width: 100%;
 }
 #bio img {
-    width: clamp(16.563rem, 15.131rem + 7.16vw, 20.5rem);
+    /* width: clamp(16.563rem, 15.131rem + 7.16vw, 20.5rem); */
+/*   width: 100
     height: auto;
     margin: 0 auto;
+} */
+
+#bio img {
+    width: clamp(16.563rem, 15.131rem + 7.16vw, 20.5rem);
+    height: auto;
 }
+
 /*statement*/
 #statement dl {
     position: relative;
@@ -49,18 +62,28 @@ header {
     background: linear-gradient(transparent 60%, #16b5dd 60%);
 }
 
+/*gapの付け方が悪くて画面がズレる*/
 @media screen and (min-width: 735px) and (max-width: 1050px) {
-    #bio {
-    gap: clamp(0.625rem, -1.33rem + 9.77vw, 6rem);
-    }
-
-    #bio img {
-
+    #statement p {
+        flex-wrap: wrap;
     }
 }
 
-@media (min-width: 390px) and (max-width:759px) {
-    #bio {
-        grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 575px) {
+    header {
+        background-position: center;
     }
+/* bio */
+    #bio img {
+        margin: 0 auto;
+    }
+    #bio{
+        flex-wrap: wrap;
+    }
+    #statement {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    /* #bio {
+        grid-template-columns: repeat(1, 1fr);
+    } */
 }
